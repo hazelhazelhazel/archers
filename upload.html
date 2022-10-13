@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Archer's Network</title>
+	<link rel="stylesheet" href="main.css">
+	<script type = "text/javascript" src="javaSCRT.js">  </script>
+
+	
+</head>
+<body>
+	<header>
+		<img class="logo" src="arch_logo.png" alt="">
+
+		<nav>
+
+			<div class="search">
+				<input type="text" placeholder="Search" required>
+				<button>Search</button>
+			</div>
+			
+
+			<ul class="link">
+				<li><a href="main.html">Home</a></li>
+				<li><a href="upload.html">Upload</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+<!--COPY UP TO HERE!!!!!-->
+	<hr>
+
+	<div class ="current_projects">
+		<div class="current_projects_container">
+
+			<h2> Upload Article </h2>
+			<form onsubmit="return uploadArticle()">
+				<label for="headline">Headline:</label>
+				<input type="text" id="headline" name="headline" placeholder="Article name.." required>
+				  
+				<label for="byline">Written By:</label> 
+				<input type="text" id="byline" name="byline" placeholder="Your Name (First Name Last Name)" required><br>
+
+				<label for="datewritten">Date: </label> 
+				<input type="date" id="datewritten" name="datewritten" required>
+				
+
+				<label for="category">Categories</label>
+				<select id="category" name="category" required>
+					<option value="null" disabled selected>Select your option</option>
+			        <option value="school">School</option>
+			        <option value="national">National</option>
+			        <option value="world">World</option>
+			        <option value="opinion">Opinion</option>
+		        </select><br>
+
+		        <div class="moredivs">
+
+
+			        <div class="lead_and_body">
+						<label for="lead">Lead:</label> <br>
+						<textarea id="body" name="body" placeholder="Your Opening Paragraph.." required minlength="6"></textarea> <br>
+					</div>
+
+					<div class="lead_and_body">
+				        <label for="body">Body:</label><br>
+			      		<textarea id="body" name="body" placeholder="Write something.."  required></textarea> <br>
+		      	
+		      		</div>
+		      	</div>
+
+	      		<label for="photos">Photos:</label>
+	      		<button class="button photos" type="submit">Upload Photos</button>
+	      		<br>
+
+	      		<div class="button_container">
+	      			<button class="button button1" type="submit">Submit</button>
+					<button class="button button2" type="reset">Clear</button>
+				</div>
+		        
+
+		       	</form>
+		</div>
+	</div>
+	
+
+
+</body>
+</html>

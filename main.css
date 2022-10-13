@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* This makes the header class in one line and justifies them */
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #37413b;
+
+}
+
+.logo{
+    width: 10em;
+    height: 7em;
+}
+
+
+nav .search {
+    padding: 0 1.2em;
+    margin-left: 8em;
+}
+
+nav .search input[type="text"] {
+    width: 130px;
+    background-color: white;
+}
+
+nav .search button{
+    background-color: #15f070;
+    border: none;
+    color: white;
+    margin-bottom: 10px;
+    padding: 3px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+nav .search button :hover{
+    background-color: #0d7e3c;
+}
+
+nav .link{
+    list-style: none;
+}
+
+nav .link li{
+    display: inline-block;
+    padding: 0 20px;
+
+}
+
+nav .link li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Styling for textbox in upload.html */
+input {
+    text-align: center;
+    width: 25%;
+    font-family: "Montserrat", serif;
+}
+
+textarea {
+    
+   font-family: "Comic Sans MS", "Comic Sans", cursive;
+  width: 90%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 10px;
+  resize: none;
+
+}
+
+/* Styling for buttons */
+.button {
+    background-color: white; 
+    border: 2px solid #4CAF50;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+
+.button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button_container
+{
+   text-align: center;
+}
+
+/* Removing Styling on links */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/* Styling for about us */
+.aboutus 
+{
+    justify-content: center;
+    width:  100%;
+    display: flex;
+
+}
+
+.container_aboutus
+{
+    text-align: center;
+    width: 60%;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+/* Styling for contact us */
+.contactus 
+{
+    justify-content: center;
+    width:  100%;
+    display: flex;
+
+}
+
+.container_contactus
+{
+    text-align: center;
+    width: 60%;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+
+}
+
+/* for images in contact us */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.moredivs
+{
+    justify-content: space-between; /* This makes the header class in one line and justifies them */
+     display: flex;
+}
+
+.lead_and_body
+{
+    width:  100%;
+   
+}
+
+.current_projects
+{
+    justify-content: center;
+    width:  100%;
+    display: flex;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color:  #4CAF50;
+
+}
+
+.current_projects_container
+{
+     width:  80%;
+}
+
+/* Styling for myarticles.html */
+
+
+.my_articles
+{ 
+    padding: 50px;
+    margin: 20px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    justify-content: center;
+    width:  100%;
+    display: flex;
+
+
+}
+
+
+.buttons_myarticles 
+{
+    background-color: white; 
+    border: 2px solid #4CAF50;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+
+.buttons_myarticles:hover 
+{
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.my_articles_container
+{
+     margin-left: 10%;
+
+
+}
+.my_articles_container .row
+{
+    width:  100%;
+
+}
+
+.my_articles_container .row .column
+{
+    width:  50%;
+}
+
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Archer's Network</title>
+	<link rel="stylesheet" href="main.css">
+	<script type = "text/javascript" src="javaSCRT.js">  </script>
+</head>
+<body>
+	<header>
+		<img class="logo" src="arch_logo.png" alt="">
+
+		<nav>
+
+			<div class="search">
+				<input type="text" placeholder="Search" required>
+				<button>Search</button>
+			</div>
+			
+
+			<ul class="link">
+				<li><a href="main.html">Home</a></li>
+				<li><a href="upload.html">Upload</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+<!--COPY UP TO HERE!!!!!-->
+<div class ="current_projects">
+		<div class="current_projects_container">
+
+	<h2> Edit Article 5 </h2>
+			<form onsubmit="return uploadArticle()">
+				<label for="headline">Headline:</label>
+				<input type="text" id="headline" name="headline" placeholder="Article name.." required value="Start reading—save the world from ignorance and fake news" >
+				  
+				<label for="byline">Written By:</label> 
+				<input type="text" id="byline" name="byline" placeholder="Kimi no Name" required value="Patrick Frye" ><br>
+
+				<label for="datewritten">Date: </label> 
+				<input type="date" id="datewritten" name="datewritten" required value="2022-10-08" >
+				
+
+				<label for="category">Categories</label>
+				<select id="category" name="category" required >
+					<option value="null" disabled>Select your option</option>
+			        <option value="school">School</option>
+			        <option value="national">National</option>
+			        <option value="world" >World</option>
+			        <option value="opinion"selected>Opinion</option>
+		        </select><br>
+
+		        <div class="moredivs">
+
+
+			        <div class="lead_and_body">
+						<label for="lead">Lead:</label> <br>
+						<textarea id="body" name="body" placeholder="Your Opening Paragraph.." required > Enter your opening paragraph </textarea> <br>
+					</div>
+
+					<div class="lead_and_body">
+				        <label for="body">Body:</label><br>
+			      		<textarea id="body" name="body" placeholder="Write something.."  required >
+			      		One radiant spark of a matchstick can turn darkness into light, just as how reading can save one lost soul in the midst of a cruel night. This is the power of reading.
+
+			      		However, this world has woven thousands of stories meant to be told, and almost half of them are dying to be seen. Everyone knows how important reading is, but some of us are still left unreached about its technicolored worth.
+
+			      		An online article entitled “How To Take Care Of Yourself—What Does It Mean?” by author and entrepreneur Rebecca Temsen listed the five essential elements for an individual’s wellness. These include physical, emotional, social, spiritual, and intellectual. You can only accomplish the real meaning of self-care if you have looked into these five factors and done ways to hone them all.
+
+
+			      		</textarea> <br>
+		      	
+		      		</div>
+		      	</div>
+
+	      		<label for="photos">Photos:</label><br>
+	      		
+	      		<br>
+
+	      		<div class="button_container">
+	      			
+	      			
+	      			<button class="button button1" type="submit">Save
+	      			
+					</button>
+					
+					<!-- Due to constraints in front end, delete function will be replaced by reset function -->
+					<button class="button button2" type="reset">Delete</button>
+				</div>
+		        
+
+		       	</form>
+		</div>
+	</div>
+
+</body>
+</html>

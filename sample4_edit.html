@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Archer's Network</title>
+	<link rel="stylesheet" href="main.css">
+	<script type = "text/javascript" src="javaSCRT.js">  </script>
+</head>
+<body>
+	<header>
+		<img class="logo" src="arch_logo.png" alt="">
+
+		<nav>
+
+			<div class="search">
+				<input type="text" placeholder="Search" required>
+				<button>Search</button>
+			</div>
+			
+
+			<ul class="link">
+				<li><a href="#">Home</a></li>
+				<li><a href="upload.html">Upload</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+<!--COPY UP TO HERE!!!!!-->
+<div class ="current_projects">
+		<div class="current_projects_container">
+
+	<h2> Edit Article 4 </h2>
+			<form onsubmit="return uploadArticle()">
+				<label for="headline">Headline:</label>
+				<input type="text" id="headline" name="headline" placeholder="Article name.." required value="Biden’s national security plan aims at China, Russia" readonly>
+				  
+				<label for="byline">Written By:</label> 
+				<input type="text" id="byline" name="byline" placeholder="Kimi no Name" required value="Joe Baker" readonly><br>
+
+				<label for="datewritten">Date: </label> 
+				<input type="date" id="datewritten" name="datewritten" required value="2022-10-08" readonly>
+				
+
+				<label for="category">Categories</label>
+				<select id="category" name="category" required readonly>
+					<option value="null" disabled>Select your option</option>
+			        <option value="school">School</option>
+			        <option value="national">National</option>
+			        <option value="world" selected>World</option>
+			        <option value="opinion">Opinion</option>
+		        </select><br>
+
+		        <div class="moredivs">
+
+
+			        <div class="lead_and_body">
+						<label for="lead">Lead:</label> <br>
+						<textarea id="body" name="body" placeholder="Your Opening Paragraph.." required readonly> WASHINGTON  – The White House rolled out a long-delayed national security strategy on Wednesday that seeks to contain China’s rise while reemphasizing the importance of working with allies to tackle challenges confronting democratic nations. </textarea> <br>
+					</div>
+
+					<div class="lead_and_body">
+				        <label for="body">Body:</label><br>
+			      		<textarea id="body" name="body" placeholder="Write something.."  required readonly>
+			      		The 48-page document, which was delayed by Russia’s invasion of Ukraine, includes no major shifts in thinking and introduces no major new foreign policy doctrines. Instead, it highlights the view that U.S. leadership is the key to overcoming global threats like climate change and the rise of authoritarianism.
+
+			      		Even after Russia’s invasion, China represents the most consequential challenge to the global order and the United States must win the economic arms race with the superpower if it hopes to retain its global influence, the strategy says.
+
+			      		“The People’s Republic of China harbors the intention and, increasingly, the capacity to reshape the international order in favor of one that tilts the global playing field to its benefit, even as the United States remains committed to managing the competition between our countries responsibly,” national security advisor Jake Sullivan said in outlining the policy.
+
+			      		He said Washington must manage the China relationship while dealing with transnational challenges including climate change, food insecurity, communicable diseases, terrorism, the energy transition, and inflation.
+
+			      		China’s embassy in Washington did not respond immediately to a request for comment.
+
+		      		</textarea> <br>
+		      	
+		      		</div>
+		      	</div>
+
+	      		<label for="photos">Photos:</label><br>
+	      		<img src="article3.png" alt="article3" width="60%">
+	      		<br>
+
+	      		<div class="button_container">
+	      			
+	      			<a href="sample_edit.html">
+	      			<button class="button button1" type="submit">Save
+	      			</a>
+					</button>
+					
+					<!-- Due to constraints in front end, delete function will be replaced by reset function -->
+					<button class="button button2" type="reset">Delete</button>
+				</div>
+		        
+
+		       	</form>
+		</div>
+	</div>
+
+</body>
+</html>
